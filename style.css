@@ -1,0 +1,92 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.container .heading{
+  width: 75%;
+  padding: 50px;
+}
+
+.container .heading h2{
+    font-size: 3em;
+    font-weight: bolder;
+    border:3px solid gray;
+    padding: 10px;
+}
+
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+}
+
+.container .box .dream img{
+    width: 100%;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.container .button{
+    margin: 40px 0px 70px 0px;
+    padding: 15px 20px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.container .button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.footer{
+    background-color: aqua;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+@media (max-width:760px){
+    .container .box{
+        flex-direction: column;
+        
+    }
+
+    .container .box .dream{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:548px){
+    .container .heading{
+        width: 100%;
+      }
+      
+      .container .heading h2{
+          font-size: 1em;
+      }
+
+}
